@@ -6,24 +6,51 @@ Python Core object Types
 
 import math
 
+
+
 def numbers_and_strings():
+
     """
+
     This is to review numbers and strings and basic operations.
+
     """
+
     # Assign a string "EE551" to a variable x
+
     x = "EE551"
 
+
+
     # Assign a string "Stevens" to a variable y
+    y = "Stevens" 
+
+
 
     # Repeat variable y 5 times
+    z = y*5
+    
+#     print(z)
+
 
     # What is the length of z?
+    length = len(z)
+
+
 
     # Concatenate variable y with string " is good"
 
+    y =  "is good"
+
     # Replace "good" with "awesome" in variable m and assign it to a new variable n
+    
+    m = y.replace("good","awesome")
+    n = m
+
+
 
     return x, y, z, length, m, n
+
 
 
 def lists():
