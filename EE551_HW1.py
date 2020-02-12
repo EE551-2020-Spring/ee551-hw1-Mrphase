@@ -53,30 +53,56 @@ def numbers_and_strings():
 
 
 
+
 def lists():
+
     """
+
     This is to review basic operations with lists.
+
     """
+
     n = "Stevens is awesome"
+    
+
 
     # Split variable n on a delimiter space into a list of substrings
 
+    list1 = n.split()
+
     # Get all the items past the first of the third substring
 
+    s = list1[-1][1:]
+
     # Create a 3 x 3 matrix as nested list such that
+
     #   first row is [1, 4, 5]
+
     #   second row is [6, 10, 11]
+
     #   third row is [12, 17, 38]
+
+    matrixA = [[1,4,5],[6,10,11],[12,17,18]]
 
     # Collect the items in the last column of matrix A using list comprehension
 
+    matrix_3 = matrixA[-1]
+
     # Collect only the even items of the diagonal of matrix A using list comprehension
 
+    matrix_4 = matrixA[1::2]
+    
     # We can convert a single character to its underlying integer code (e.g., its ASCII byte value)
-    # by passing it to the built-in ord function. Generate a list of these integers to represent
-    # each character of the string "Stevens" using list comprehension.
 
+    # by passing it to the built-in ord function. Generate a list of these integers to represent
+
+    # each character of the string "Stevens" using list comprehension.
+    
+
+    p = list1; r = s; c = matrix_3; d = matrix_4; 
+    o = [ord(i) for i in "Stevens"]
     return p, r, c, d, o
+
 
 
 def dictionaries():
