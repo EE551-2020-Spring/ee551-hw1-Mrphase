@@ -146,23 +146,28 @@ def dictionaries():
     #p = {"first_name":"Grace", "last_name":"Hopper","jobs": ["scientist", "engineer"] }
     name = {"first_name":"Grace", "last_name":"Hopper"}    
     p= {"name":name,"jobs": ["scientist", "engineer"], "age":85 }
+    amazing_grace  = p
 
     # Add "programmer" to the list of jobs Grace has
 
     # IMPLEMENT IT HERE
 
     p["jobs"].append("programmer")
-
+    amazing_grace  = p
     # Get the third job Grace has that you recently added
 
-    p = p["jobs"][-1]
+    p = amazing_grace["jobs"][-1]
 
     # Use the sort() function to get sorted keys of amazing_grace in alphabetically ascending order
-    a="amazing_grace"
+#     a="amazing_grace"
 
-    aa =list(a)
-    aa.sort()
-    k=aa
+#     aa =list(a)
+#     aa.sort()
+#     k=aa
+    
+    k = [key for key in amazing_grace.keys()]
+
+    k.sort()
 
     return a, f, p, k
 
